@@ -27,7 +27,7 @@ export const Navbar = () => {
               <ul className="flex items-center md:mt-6 gap-6 text-sm">
                 {["Home", "Alldoctors", "About", "Contact"].map((item) => (
                   <li key={item}>
-                    <Link className="nav-des text-base font-medium  " to={`/${item.toLowerCase()}`}  >
+                    <Link className="nav-des text-base font-medium  " to={item === "Home" ? "/" : `/${item.toLowerCase()}`} >
                       {item}
                     </Link>
                     
@@ -76,7 +76,7 @@ export const Navbar = () => {
                 <li key={item}>
                   <Link
                     className="block text-gray-500 transition hover:text-gray-700"
-                    to={`/${item.toLowerCase()}`}
+                    to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                     onClick={() => setIsOpen(false)} // Close menu when clicking a link
                   >
                     {item}
