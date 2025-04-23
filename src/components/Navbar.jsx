@@ -27,7 +27,7 @@ export const Navbar = () => {
               <ul className="flex items-center md:mt-6 gap-6 text-sm">
                 {["Home", "Alldoctors", "About", "Contact"].map((item) => (
                   <li key={item}>
-                    <Link className="nav-des text-base font-medium  " to={item === "Home" ? "/" : `/${item.toLowerCase()}`} >
+                    <Link className="nav-des text-base font-medium border border-transparent hover:border-b-blue-500 hover:scale-110    hover:text-blue-500 transition-all duration-500  " to={item === "Home" ? "/" : `/${item.toLowerCase()}`} >
                       {item}
                     </Link>
                     
@@ -39,7 +39,7 @@ export const Navbar = () => {
 
           <div className="flex items-center md:mt-6 gap-4">
             <div className="sm:flex sm:gap-4">
-              <a className="rounded-md  bg-blue-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm" href="#">
+              <a className="rounded-md  bg-blue-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm border border-transparent hover:bg-white hover:text-black hover:border-blue-500 " href="#">
                 Login
               </a>
 
