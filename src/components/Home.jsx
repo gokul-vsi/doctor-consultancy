@@ -80,7 +80,7 @@ arrow_forward
         <p className='text-center text-sm '>
         Simply browse through our extensive list of trusted doctors.
         </p>
-        <div className="container mx-auto p-5">
+        <div className="container mx-auto p-5 md:px-20 ">
         <div  className='grid grid-cols-2 md:grid-cols-4 gap-4'>
           {
             doc1.map((dd,index)=>(
@@ -102,11 +102,11 @@ arrow_forward
         <div className="container mx-auto p-5">
           <div className="flex flex-row rounded-lg bg-blue-500 ">
             <div className="md:w-1/2 md:ms-14 ms-1.5" >
-              <h1 className='md:text-5xl text-2x text-white font-medium mx-1 text-justify mt-10 md:mt-40 '>
+              <h1 className='md:text-5xl text-2x text-white font-medium mx-1 text-justify mt-10 md:mt-16 lg:mt-40 '>
               Book Appointment
 With 100+ Trusted Doctors
               </h1>
-              <button className='md:px-4 md:py-2 px-1 py-1.5 rounded-4xl md:mt-8 mt-4 bg-white text-gray-400 font-bold hover:scale-110 transition-all duration-500 mb-3 '>Create Account</button>
+              <button className='md:px-4 md:py-2 px-1 py-1.5 rounded-4xl md:mt-8 mt-4 bg-white text-gray-400 font-bold hover:scale-110 transition-all duration-500  mb-3 '>Create Account</button>
             </div>
             <div className="md:w-1/2">
                <div className="flex justify-center items-center">
@@ -119,7 +119,7 @@ With 100+ Trusted Doctors
         {/* footer-2 */}
         <div className="container mx-auto p-5 mb-5">
           <div className="grid grid-cols-1 md:grid-cols-3 ">
-            <div className='md:ms-16 md:mt-14 flex  flex-col justify-center items-center'>
+            <div className='lg:ms-16 md:mt-14 flex  flex-col justify-center items-center'>
               <div>
               <svg width="217" height="46" viewBox="0 0 217 46" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.9997 0C35.7026 0 45.9997 10.2971 45.9997 23V39.1C45.9997 40.93 45.2728 42.685 43.9788 43.979C42.6848 45.273 40.9297 46 39.0997 46H24.1497V35.9099C24.1497 33.6076 24.29 31.2225 25.4975 29.2629C26.362 27.8586 27.5185 26.6566 28.8884 25.7385C30.2583 24.8204 31.8096 24.2077 33.4371 23.9419L33.8776 23.8706C34.0592 23.8085 34.2168 23.6912 34.3284 23.5351C34.44 23.379 34.5 23.1919 34.5 23C34.5 22.8081 34.44 22.621 34.3284 22.4649C34.2168 22.3088 34.0592 22.1915 33.8776 22.1294L33.4371 22.0581C31.0591 21.6697 28.8632 20.5441 27.1594 18.8403C25.4556 17.1365 24.3301 14.9406 23.9416 12.5626L23.8703 12.1222C23.8082 11.9406 23.6909 11.7829 23.5348 11.6713C23.3787 11.5597 23.1916 11.4997 22.9997 11.4997C22.8078 11.4997 22.6208 11.5597 22.4647 11.6713C22.3086 11.7829 22.1913 11.9406 22.1292 12.1222L22.0579 12.5626C21.7922 14.1902 21.1795 15.7415 20.2614 17.1114C19.3433 18.4814 18.1412 19.6378 16.7368 20.5022C14.7772 21.7097 12.3921 21.85 10.0898 21.85H0.0273438C0.628794 9.68185 10.6832 0 22.9997 0Z" fill="#5F6FFF"/>
@@ -131,13 +131,13 @@ With 100+ Trusted Doctors
                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                  </p>
               </div>
-            <div className='md:ms-80 md:mt-17 text-center mt-3 mb-3'>
+            <div className='lg:ms-80 md:mt-17 text-center mt-3 mb-3'>
               <h1 className='text-lg mb-3.5 font-medium'>Hospital</h1>
               <p className='mb-2 text-gray-400 font-bold'>x-Ray</p>
               <p className='mb-2 text-gray-400 font-bold'>ECG</p>
               <p className='mb-2 text-gray-400 font-bold'>24*7 Facilities</p>
             </div>
-            <div className='md:ms-28 md:mt-17 text-center mt-3 mb-3'>
+            <div className='lg:ms-28 md:mt-17 text-center mt-3 mb-3'>
                <h1 className='text-lg mb-3.5 font-medium'>GET IN TOUCH</h1>
                <p className='mb-2 text-sm text-gray-400 font-bold'>+0-000-000-000</p>
                <p className='mb-2 text-sm text-gray-400 font-bold'>Prescripto123@gmail.com</p>

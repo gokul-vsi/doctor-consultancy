@@ -4,6 +4,7 @@ import doc2 from '../doctors/doc2'
 export const Alldoctors = () => {
   return (
     <div>
+         
             <div className="container mx-auto md:mt-8 p-5 md:px-28">
                  <div  className='grid grid-cols-2 md:grid-cols-4 gap-4'>
                    {
