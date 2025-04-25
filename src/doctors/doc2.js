@@ -19,7 +19,8 @@ const doc2list = [
     id: 1,
     name: "Dr.Richards James",
     image: doc1,
-    role:"General physician"
+    role:"General physician",
+    idnum:"doctor1"
   },
   {
     id: 2,
@@ -91,7 +92,7 @@ const doc2list = [
     id: 1,
     name: "Dr. Chloe Evans",
     image: doc13,
-    role:" General physician"
+    role:"General physician"
   },
   {
     id: 1,
