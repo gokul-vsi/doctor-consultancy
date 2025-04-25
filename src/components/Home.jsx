@@ -17,10 +17,10 @@ export const Home = () => {
         <div className="container mx-auto mt-5 md:mt-16 mb-10 rounded bg-blue-500">
             <div className="flex flex-col  md:flex-row">
             <div className="md:w-1/2  text-center md:text-start   md:ms-14  ">
-              <h1 className='md:text-5xl text-2xl text-white font-medium  md:mt-24 '>Book Appointment
+              <h1 className='md:text-5xl text-2xl mt:2 text-white font-medium  md:mt-24 '>Book Appointment
               With Trusted Doctors</h1>
               <div className='mt-7 px-3 md:px-0 flex gap-4' >
-                 <img src={home2}  alt="" />
+                 <img src={home2} className='hidden md:block'  alt="" />
                  <p className='text-white' >Simply browse through our extensive list of trusted doctors,
                  schedule your appointment hassle-free.</p>
               </div>
