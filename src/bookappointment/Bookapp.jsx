@@ -1,65 +1,53 @@
-import React from 'react'
-import doc1 from '../images/doc1.png'
-import { MdVerified } from "react-icons/md";
-import doc2 from '../doctors/doc2'
-import { Link } from 'react-router-dom';
+import React, { useRef } from 'react'
+import TextField from '@mui/material/TextField';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export const Doctor1 = () => {
+export const Bookapp = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_is0fh28', 'template_l384ho4', form.current, {
+          publicKey: 'EIvz0waaN4umVp2lz',
+        })
+        .then(
+          () => {          
+            console.log('SUCCESS!');
+            toast.success("Message send Successfully")
+            form.current.reset();
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
+
   return (
     <div>
-        {/* ========DoctorsAppointmentHeader========== */}
-        <div className="container mx-auto p-5 md:px-16 md:mt-8 ">
-            <div className="flex flex-col md:flex-row gap-5 ">
-                <div className="md:w-1/2">
-                   <div>
-                   <img src={doc1} className=' md:mt-12 lg:mt-2 md:w-80 lg:ms-16 bg-blue-500 rounded-lg ' alt="" />
-                   </div>
-                </div>
-                <div className="md:w-1/2 lg:me-18 border rounded-lg  p-5 lg:px-14 border-gray-300">
-                     <div className='flex  items-center md:justify-start mb-1 gap-4'>
-                        <h1 className='text-3xl' >Dr. Richard James</h1>
-                        <MdVerified className='mt-2 text-blue-500 md:mt-1' />
-                     </div>
-                     <p className='mb-1'>MBBS - General physician
-
-4 Years</p>
-<p className='mb-1 font-medium'>About:</p>
-<p className='text-justify mb-1'>Dr. Richard James has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Richard James has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.</p>
-<p className='font-bold'>Appointment fee: $50</p>
-                </div>
+        <ToastContainer position="top-right" />
+    <h1 className='text-center md:mt-16 lg:ms-18 underline decoration-blue-500 text-3xl font-medium'>Book Your Appointment </h1>
+        <div className="flex  justify-center  items-center">
+            <div className='border mt-5 md:mt-5 border-gray-200 p-4 rounded-lg'>
+            <form ref={form} onSubmit={sendEmail}>
+            <div className='flex gap-5'>
+            <TextField id="outlined-basic" name="from_name" label="Name" variant="outlined" />
+            <TextField id="outlined-basic" name="from_mobile" label="Mobile Number" variant="outlined" />
+            </div>
+            <div className='flex mt-4 gap-5'>
+            <TextField id="outlined-basic" name="from_email" label="Email" variant="outlined" />
+            <TextField id="outlined-basic" name="from_address" label="Address" variant="outlined" />
+            </div>
+            <div className="flex mt-4 justify-center items-center">
+                <input type="submit" value="Book Now" className='bg-blue-500 text-white px-4 py-2 rounded-4xl '/>
+            </div>
+            </form>
             </div>
         </div>
-        {/* ===================================================== */}
-        <div className='flex justify-center items-center '>
-         <Link to='/bookappointment'> 
-        <button className='px-8 py-2 hover:cursor-pointer md:mt-7 rounded-3xl bg-blue-500 text-white'>Book Appointment</button>
-        </Link>
-        </div>
-        {/* ================================================= */}
-        <h1 className='text-center mt-5 md:mt-14 md:text-4xl font-medium'>Related Doctors</h1>
-        <p className='text-center mt-4 mb-5'>Simply browse through our extensive list of trusted doctors.</p>
-        {/* ==================================================== */}
-        {/* related doctor */}
-        <div className="container mx-auto md:px-20 p-5">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
-               {
-                doc2.filter(dd=>dd.role === "General physician").map((dd,index)=>(
-                    
-                      <div key={index} className=' border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  '>
-                        <img src={dd.image} className='w-full h-auto bg-gray-100  ' alt="" />
-                        <div className="flex justify-center items-center flex-row gap-2 mt-2 ">
-                         <p className='w-2 h-2 rounded-full bg-green-500'></p>
-                         <p className='text-green-500'>Available</p>
-                        </div>
-                           <p className='text-center font-medium ' >{dd.name}</p>
-                           <p className='text-center mb-2'>{dd.role}</p>  
-                    </div>
-                ))
-               }
-            </div>
-        </div>
-        {/* ================================================================== */}
-        {/* footer */}
         <div className="container mx-auto p-5 mb-5">
           <div className="grid grid-cols-1 md:grid-cols-3 ">
             <div className='lg:ms-16 md:mt-14 flex  flex-col justify-center items-center'>

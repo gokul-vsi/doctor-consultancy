@@ -9,6 +9,7 @@ import { About } from './components/About'
 import { Contactus } from './components/Contactus'
 import { Navbar } from './components/Navbar'
 import { Doctor1 } from './appointments/Doctor1'
+import { Bookapp } from './bookappointment/Bookapp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
             <Route path='/about' element={<About/>}></Route>
             <Route path='/contact' element={<Contactus/>}></Route>
             <Route path='/doctor1' element={<Doctor1/>}></Route>
+            <Route path='/bookappointment' element={<Bookapp/>}></Route>
          </Routes>
       </BrowserRouter>
     </>

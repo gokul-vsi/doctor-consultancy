@@ -24,7 +24,7 @@ export const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <nav aria-label="Global">
-              <ul className="flex items-center md:mt-6 gap-6 text-sm">
+              <ul className="flex lg:me-10 items-center md:mt-6 gap-6 text-sm">
                 {["Home", "Alldoctors", "About", "Contact"].map((item) => (
                   <li key={item}>
                     <Link className="nav-des text-base font-medium border border-transparent hover:border-b-blue-500 hover:scale-110    hover:text-blue-500 transition-all duration-500  " to={item === "Home" ? "/" : `/${item.toLowerCase()}`} >
