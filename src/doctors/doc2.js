@@ -26,19 +26,22 @@ const doc2list = [
     id: 2,
     name: "Dr.Emily Larson",
     image: doc2,
-    role:"Gynecologist"
+    role:"Gynecologist",
+    idnum:"doctor2"
   },
   {
     id: 1,
     name: "Dr.Maxwell",
     image: doc3,
-    role:"Dermatologist"
+    role:"Dermatologist",
+    idnum:"doctor3"
   },
   {
     id: 1,
     name: "Dr.Chistopher Lee",
     image: doc4,
-    role:"Pediatricians"
+    role:"Pediatricians",
+    idnum:"doctor4"
   },
   {
     id: 1,
