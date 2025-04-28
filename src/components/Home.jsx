@@ -9,6 +9,7 @@ import logo4 from '../images/logo4.svg'
 import logo5 from '../images/logo5.svg'
 import logo6 from '../images/logo6.svg'
 import doc1 from '../doctors/doc1'
+import { Link } from 'react-router-dom'
 
 export const Home = () => {
   return (
@@ -84,7 +85,8 @@ arrow_forward
         <div  className='grid grid-cols-2 md:grid-cols-4 gap-4'>
           {
             doc1.map((dd,index)=>(
-               <div key={index} className=' border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  '>
+              <div key={index} className=' border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  '>
+                 
                    <img src={dd.image} className='w-full h-auto bg-gray-100  ' alt="" />
                    <div className="flex justify-center items-center flex-row gap-2 mt-2 ">
                     <p className='w-2 h-2 rounded-full bg-green-500'></p>
@@ -92,6 +94,7 @@ arrow_forward
                    </div>
                       <p className='text-center font-medium ' >{dd.name}</p>
                       <p className='text-center mb-2'>{dd.role}</p>  
+                    
                </div>
             ))
           }

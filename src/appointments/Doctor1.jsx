@@ -32,7 +32,7 @@ export const Doctor1 = () => {
         {/* ===================================================== */}
         <div className='flex justify-center items-center '>
          <Link to='/bookappointment'> 
-        <button className='px-8 py-2 hover:cursor-pointer md:mt-7 rounded-3xl bg-blue-500 text-white'>Book Appointment</button>
+        <button className='px-8 py-2 hover:cursor-pointer md:mt-7 rounded-3xl bg-blue-500 text-white border border-transparent hover:bg-white hover:border-blue-500 hover:text-blue-500'>Book Appointment</button>
         </Link>
         </div>
         {/* ================================================= */}
@@ -46,13 +46,15 @@ export const Doctor1 = () => {
                 doc2.filter(dd=>dd.role === "General physician").map((dd,index)=>(
                     
                       <div key={index} className=' border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  '>
+                        
                         <img src={dd.image} className='w-full h-auto bg-gray-100  ' alt="" />
                         <div className="flex justify-center items-center flex-row gap-2 mt-2 ">
                          <p className='w-2 h-2 rounded-full bg-green-500'></p>
                          <p className='text-green-500'>Available</p>
                         </div>
                            <p className='text-center font-medium ' >{dd.name}</p>
-                           <p className='text-center mb-2'>{dd.role}</p>  
+                           <p className='text-center mb-2'>{dd.role}</p>
+                            
                     </div>
                 ))
                }

@@ -1,10 +1,10 @@
 import React from "react";
-import doc4 from "../images/doc4.png";
+import doc9 from "../images/doc9.png";
 import { MdVerified } from "react-icons/md";
 import doctor from "../doctors/doc2";
 import { Link } from "react-router-dom";
 
-export const Doctor4 = () => {
+export const Doctor9 = () => {
   return (
     <div>
       {/* ========DoctorsAppointmentHeader========== */}
@@ -13,7 +13,7 @@ export const Doctor4 = () => {
           <div className="md:w-1/2">
             <div>
               <img
-                src={doc4}
+                src={doc9}
                 className=" md:mt-12 lg:mt-2 md:w-80 lg:ms-16 bg-blue-500 rounded-lg "
                 alt=""
               />
@@ -21,15 +21,15 @@ export const Doctor4 = () => {
           </div>
           <div className="md:w-1/2 lg:me-18 border rounded-lg  p-5 lg:px-14 border-gray-300">
             <div className="flex  items-center md:justify-start mb-1 gap-4">
-              <h1 className="text-3xl">Dr.Chistopher Lee</h1>
+              <h1 className="text-3xl">Dr. Ava Mitchell</h1>
               <MdVerified className="mt-2 text-blue-500 md:mt-1" />
             </div>
-            <p className="mb-1">MBBS - Pediatricians 3 Year</p>
+            <p className="mb-1">MBBS - Dermatologist 3 Year</p>
             <p className="mb-1 font-medium">About:</p>
             <p className="text-justify mb-1">
-              Dr.Chistopher Lee has a strong commitment to delivering
+              Dr. Ava Mitchell has a strong commitment to delivering
               comprehensive medical care, focusing on preventive medicine, early
-              diagnosis, and effective treatment strategies. Dr.Chistopher Lee
+              diagnosis, and effective treatment strategies. Dr. Ava Mitchell
               has a strong commitment to delivering comprehensive medical care,
               focusing on preventive medicine, early diagnosis, and effective
               treatment strategies.
@@ -41,7 +41,7 @@ export const Doctor4 = () => {
       {/* ===================================================== */}
       <div className="flex justify-center items-center ">
         <Link to="/bookappointment">
-          <button className="px-8 py-2 hover:cursor-pointer md:mt-7 rounded-3xl bg-blue-500 text-white border border-transparent hover:bg-white hover:border-blue-500 hover:text-blue-500">
+          <button className="px-8 py-2 hover:cursor-pointer md:mt-7 rounded-3xl bg-blue-500 text-white border border-transparent hover:bg-white hover:border-blue-500 hover:text-blue-500 ">
             Book Appointment
           </button>
         </Link>
@@ -58,13 +58,12 @@ export const Doctor4 = () => {
       <div className="container mx-auto md:px-20 p-5">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
           {doctor
-            .filter((dd) => dd.role === "Pediatricians")
+            .filter((dd) => dd.role === "Dermatologist")
             .map((dd, index) => (
               <div
                 key={index}
                 className=" border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  "
               >
-                
                 <img
                   src={dd.image}
                   className="w-full h-auto bg-gray-100  "
@@ -76,7 +75,6 @@ export const Doctor4 = () => {
                 </div>
                 <p className="text-center font-medium ">{dd.name}</p>
                 <p className="text-center mb-2">{dd.role}</p>
-                
               </div>
             ))}
         </div>

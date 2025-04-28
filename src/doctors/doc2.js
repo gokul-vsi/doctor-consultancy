@@ -19,95 +19,106 @@ const doc2list = [
     id: 1,
     name: "Dr.Richards James",
     image: doc1,
-    role:"General physician",
-    idnum:"doctor1"
+    role: "General physician",
+    idnum: "doctor1",
   },
   {
     id: 2,
     name: "Dr.Emily Larson",
     image: doc2,
-    role:"Gynecologist",
-    idnum:"doctor2"
+    role: "Gynecologist",
+    idnum: "doctor2",
   },
   {
     id: 1,
     name: "Dr.Maxwell",
     image: doc3,
-    role:"Dermatologist",
-    idnum:"doctor3"
+    role: "Dermatologist",
+    idnum: "doctor3",
   },
   {
     id: 1,
     name: "Dr.Chistopher Lee",
     image: doc4,
-    role:"Pediatricians",
-    idnum:"doctor4"
+    role: "Pediatricians",
+    idnum: "doctor4",
   },
   {
     id: 1,
     name: "Dr.Jennifer Garcia",
     image: doc5,
-    role:"Neurologist"
+    role: "Neurologist",
+    idnum: "doctor5",
   },
   {
     id: 1,
     name: "Dr.Andrew willams",
     image: doc6,
-    role:"Gastroenterologist"
+    role: "Gastroenterologist",
+    idnum: "doctor6",
   },
   {
     id: 1,
     name: "Dr.christopher davis",
     image: doc7,
-    role:"General physician"
+    role: "General physician",
+    idnum: "doctor7",
   },
   {
     id: 1,
     name: "Dr.Timothy white",
     image: doc8,
-    role:"Gynecologist"
+    role: "Gynecologist",
+    idnum: "doctor8",
   },
   {
     id: 1,
     name: "Dr.Ava mitchell",
     image: doc9,
-    role:"Dermatologist"
+    role: "Dermatologist",
+    idnum: "doctor9",
   },
   {
     id: 1,
     name: "Dr.jeffrey king",
     image: doc10,
-    role:"Pediatricians"
+    role: "Pediatricians",
+    idnum: "doctor10",
   },
   {
     id: 1,
     name: "Dr. Zoe Kelly",
     image: doc11,
-    role:" Neurologist"
+    role: "Neurologist",
+    idnum: "doctor11",
   },
   {
     id: 1,
     name: "Dr. Patrick Harris",
     image: doc12,
-    role:"Gastroenterologist"
+    role: "Gastroenterologist",
+    idnum: "doctor12",
   },
   {
     id: 1,
     name: "Dr. Chloe Evans",
     image: doc13,
-    role:"General physician"
+    role: "General physician",
+    idnum: "doctor13",
   },
   {
     id: 1,
     name: "Dr. Ryan Martinez",
     image: doc14,
-    role:"Gynecologist"
+    role: "Gynecologist",
+    idnum: "doctor14",
   },
   {
     id: 1,
     name: "Dr. Amelia Hill",
     image: doc15,
-    role:"Pediatricians"
+    role: "Pediatricians",
+    idnum: "doctor15",
   },
 ];
 export default doc2list;

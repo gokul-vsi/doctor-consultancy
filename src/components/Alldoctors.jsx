@@ -10,8 +10,8 @@ export const Alldoctors = () => {
                  <div  className='grid grid-cols-2 md:grid-cols-4 gap-4'>
                    {
                      doc2.map((dd,index)=>(
-                        <Link to={`/${dd.idnum}`}>
-                          <div key={index} className=' border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  '>
+                       <div key={index} className=' border overflow-hidden border-blue-200 rounded-xl hover:translate-y-[-10px] transition-all duration-500  '>
+                            <Link to={`/${dd.idnum}`}>
                             <img src={dd.image} className='w-full h-auto bg-gray-100  ' alt="" />
                             <div className="flex justify-center items-center flex-row gap-2 mt-2 ">
                              <p className='w-2 h-2 rounded-full bg-green-500'></p>
@@ -19,8 +19,8 @@ export const Alldoctors = () => {
                             </div>
                                <p className='text-center font-medium ' >{dd.name}</p>
                                <p className='text-center mb-2'>{dd.role}</p>  
-                        </div>
                         </Link>
+                        </div>
                      ))
                    }
                  </div>
@@ -41,13 +41,13 @@ export const Alldoctors = () => {
                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                  </p>
               </div>
-            <div className='md:ms-80 md:mt-17 text-center mt-3 mb-3'>
+            <div className='lg:ms-80 md:mt-17 text-center mt-3 mb-3'>
               <h1 className='text-lg mb-3.5 font-medium'>Hospital</h1>
               <p className='mb-2 text-gray-400 font-bold'>x-Ray</p>
               <p className='mb-2 text-gray-400 font-bold'>ECG</p>
               <p className='mb-2 text-gray-400 font-bold'>24*7 Facilities</p>
             </div>
-            <div className='md:ms-28 md:mt-17 text-center mt-3 mb-3'>
+            <div className='lg:ms-28 md:mt-17 text-center mt-3 mb-3'>
                <h1 className='text-lg mb-3.5 font-medium'>GET IN TOUCH</h1>
                <p className='mb-2 text-sm text-gray-400 font-bold'>+0-000-000-000</p>
                <p className='mb-2 text-sm text-gray-400 font-bold'>Prescripto123@gmail.com</p>
