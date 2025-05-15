@@ -35,12 +35,12 @@ export const Bookapp = () => {
             <div className='border mt-5 md:mt-5 border-gray-200 p-4 rounded-lg'>
             <form ref={form} onSubmit={sendEmail}>
             <div className='flex gap-5'>
-            <TextField id="outlined-basic" name="from_name" label="Name" variant="outlined" />
-            <TextField id="outlined-basic" name="from_mobile" label="Mobile Number" variant="outlined" />
+            <TextField id="outlined-basic" required name="from_name" label="Name" variant="outlined" />
+            <TextField id="outlined-basic" required name="from_mobile" label="Mobile Number" variant="outlined" />
             </div>
             <div className='flex mt-4 gap-5'>
-            <TextField id="outlined-basic" name="from_email" label="Email" variant="outlined" />
-            <TextField id="outlined-basic" name="from_address" label="Address" variant="outlined" />
+            <TextField id="outlined-basic" required name="from_email" label="Email" variant="outlined" />
+            <TextField id="outlined-basic" required name="from_address" label="Address" variant="outlined" />
             </div>
             <div className="flex mt-4 justify-center items-center">
                 <input type="submit" value="Book Now" className='bg-blue-500 text-white px-4 py-2 rounded-4xl '/>
