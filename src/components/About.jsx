@@ -27,11 +27,11 @@ export const About = () => {
           <p className='font-bold'>EFFICIENCY:</p>
           <p className='mt-4'>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
         </div>
-        <div className='border-2  p-10 border-gray-300 hover:bg-blue-500 hover:border-none hover:text-white'>
+        <div className='border  p-10 border-gray-300 hover:bg-blue-500 hover:border-none hover:text-white'>
           <p className='font-bold'>CONVENIENCE:</p>
           <p className='mt-4'>Access to a network of trusted healthcare professionals in your area.</p>
         </div>
-        <div className='border-2 p-10  border-gray-300 hover:bg-blue-500 hover:border-none hover:text-white'>
+        <div className='border p-10  border-gray-300 hover:bg-blue-500 hover:border-none hover:text-white'>
           <p className='font-bold'>PERSONALIZATION:</p>
           <p className='mt-4'>Tailored recommendations and reminders to help you stay on top of your health.</p>
         </div>
